@@ -1,11 +1,3 @@
-#!/bin/bash
-# 参考文献：http://www.30lou.cn/digital/1927426.html
-# 参考文献SSH：http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
-# 如何在github上生成静态资源：https://www.cnblogs.com/huanghongbo/p/8412850.html
-# curl -O https://raw.githubusercontent.com/YuJuquan/Trojan_vpn/master/Trojan_vpn.sh && chmod +x Trojan_vpn.sh && ./Trojan_vpn.sh
-# curl -O https://raw.githubusercontent.com/YuJuquan/hello-world/master/source.sh && chmod +x source.sh && ./source.sh
-
-
 # Trojan_vpn.sh
 # *************************************
 # 创建者：于钜权                       
@@ -28,13 +20,6 @@ red(){
 yellow(){
     echo -e "\033[33m\033[01m$1\033[0m"
 }
-bred(){
-    echo -e "\033[31m\033[01m\033[05m$1\033[0m"
-}
-byellow(){
-    echo -e "\033[33m\033[01m\033[05m$1\033[0m"
-}
-
 
 # Step1:安装Trojan
 function install_trojan(){
@@ -291,9 +276,11 @@ start_menu(){
     green " 创建者：于钜权"
     blue "******************************************************"
     echo
+    blue "******************************************************"
     green " 1. 安装Trojan"
     red " 2. 卸载Trojan"
     yellow " 3. 退出脚本"
+    blue "******************************************************"
     echo
     read -p "请输入数字:" num
     case "$num" in
